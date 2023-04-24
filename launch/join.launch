@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!-- <include file="$(find catcher)/launch/join.launch">
+    </include> -->
+
+    <node pkg="turtlesim" type = "turtlesim_node" name="sim_node">
+    </node>
+    <node pkg="turtlesim" type = "turtle_teleop_key" name="sim_node1">
+    </node>
+    <node pkg="catcher" type = "spawn.py" name="spawns">
+    </node>
+    <node pkg="catcher" type = "turtle_operator.py" name="velocity" output = "screen">
+    </node>
+
+
+</launch>
